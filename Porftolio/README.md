@@ -1,6 +1,6 @@
 <h1 >Portfolio</h1>
 
-I developed crafted an immersive space-like effect using HTML Canvas, transforming my portfolio project into a captivating visual journey. This effect breathes depth and motion into the interface, creating an environment that feels both cosmic and highly responsive. By implementing dynamic circles that gracefully interact with mouse movements, I established a celestial atmosphere where users feel as if they are navigating through a serene night sky.
+I developed an immersive space-like effect using HTML Canvas, transforming my portfolio project into a captivating visual journey. This effect breathes depth and motion into the interface, creating an environment that feels both cosmic and highly responsive. By implementing dynamic circles that gracefully interact with mouse movements, I established a celestial atmosphere where users feel as if they are navigating through a serene night sky.
 
 The entire visual experience is driven by a robust JavaScript animation loop, allowing for fluid transitions and captivating interactions. Each circle shifts, expands, and gracefully blends with soft, subtle gradients, evoking the tranquility and beauty of the cosmos. The delicate interplay of colors and light gives life to the scene, creating an enchanting backdrop that invites users to explore further.
 
