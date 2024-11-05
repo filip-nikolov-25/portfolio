@@ -1,4 +1,4 @@
-import React from "react";
+
 import Canvas from "../components/HomePage/Canvas";
 import MainSection from "../components/HomePage/MainSection";
 
