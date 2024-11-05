@@ -86,36 +86,53 @@ const AboutMe = () => {
             Certificates
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-xl bg-gray-400 gap-8 p-6">
-            <img
-              src="/images/Certificates/AcademySertificate-FrontPage.png"
-              alt="Academy Certificate Front Page"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
-            <img
-              src="/images/Certificates/AcademySertificate-BackPage.png"
-              alt="Academy Certificate Back Page"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
-            <img
-              src="/images/Certificates/Next-Sertificate.png"
-              alt="Next Certificate"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
-            <img
-              src="/images/Certificates/SparkasseBankSertificate.png"
-              alt="Sparkasse Bank Certificate"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
-            <img
-              src="/images/Certificates/SavaSertificate.png"
-              alt="Sava Certificate"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
-            <img
-              src="/images/Certificates/LargerWorldSertificate.png"
-              alt="Larger World Certificate"
-              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
-            />
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/AcademySertificate-FrontPage.png"
+                alt="Academy Certificate Front Page"
+                className="w-full"
+              />
+            </div>
+
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/AcademySertificate-BackPage.png"
+                alt="Academy Certificate Back Page"
+                className="w-full"
+              />
+            </div>
+
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/Next-Sertificate.png"
+                alt="Next Certificate"
+                className="w-full"
+              />
+            </div>
+
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/SparkasseBankSertificate.png"
+                alt="Sparkasse Bank Certificate"
+                className="w-full"
+              />
+            </div>
+
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/SavaSertificate.png"
+                alt="Sava Certificate"
+                className="w-full"
+              />
+            </div>
+
+            <div className="rounded-xl overflow-hidden shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <img
+                src="/images/Certificates/LargerWorldSertificate.png"
+                alt="Larger World Certificate"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
