@@ -11,7 +11,7 @@ const Projects = () => {
               SafeWeb Project
             </div>
             <img
-              src="../../../public/images/HomepageSafeBlink.png"
+              src="/images/HomepageSafeBlink.png"
               className=" rounded-md mt-5"
               alt=""
             />
@@ -39,22 +39,22 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="../../../public/images/LargerWorldSS/first.png"
+                src="/images/LargerWorldSS/first.png"
                 alt=""
                 className="w-full border-4 border-purple-500 rounded-3xl "
               />
               <img
-                src="../../../public/images/LargerWorldSS/second.png"
+                src="/images/LargerWorldSS/second.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl  "
               />
               <img
-                src="../../../public/images/LargerWorldSS/third.png"
+                src="/images/LargerWorldSS/third.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
               <img
-                src="../../../public/images/LargerWorldSS/fourth.png"
+                src="/images/LargerWorldSS/fourth.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
@@ -87,22 +87,22 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="../../../public/MHRASS/first.png"
+                src="/images/MHRASS/first.png"
                 alt=""
                 className="w-full border-4 border-purple-500 rounded-3xl "
               />
               <img
-                src="../../../public/MHRASS/second.png"
+                src="/images/MHRASS/second.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl  "
               />
               <img
-                src="../../../public/MHRASS/third.png"
+                src="/images/MHRASS/third.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
               <img
-                src="../../../public/MHRASS/fourth.png"
+                src="/images/MHRASS/fourth.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
@@ -133,27 +133,27 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="../../../public/images/SparkasseSS/first.png"
+                src="/images/SparkasseSS/first.png"
                 alt=""
                 className="w-full border-4 border-purple-500 rounded-3xl "
               />
               <img
-                src="../../../public/images/SparkasseSS/second.png"
+                src="/images/SparkasseSS/second.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl  "
               />
               <img
-                src="../../../public/images/SparkasseSS/third.png"
+                src="/images/SparkasseSS/third.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
               <img
-                src="../../../public/images/SparkasseSS/fourth.png"
+                src="/images/SparkasseSS/fourth.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
               <img
-                src="../../../public/images/SparkasseSS/fifth.png"
+                src="/images/SparkasseSS/fifth.png"
                 alt=""
                 className="w-full  border-4 border-purple-500 rounded-3xl"
               />
@@ -177,7 +177,7 @@ const Projects = () => {
             </div>
             <div className="">
               <img
-                src="../../../public/images/PortfolioSS.png"
+                src="/images/PortfolioSS.png"
                 alt=""
                 className="w-full border-4 border-purple-500 rounded-3xl "
               />

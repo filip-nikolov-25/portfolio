@@ -66,7 +66,7 @@ const AboutMe = () => {
           </div>
           <div className="w-full lg:w-1/4 flex justify-center items-center mt-10 lg:mt-0">
             <img
-              src="../../../public/images/img.jpg"
+              src="/images/img.jpg"
               style={{
                 borderTopLeftRadius: `${corners.tl}%`,
                 borderTopRightRadius: `${corners.tr}%`,
@@ -82,35 +82,37 @@ const AboutMe = () => {
         <hr className="w-full my-5" />
 
         <div>
-          <h3 className="bg-gray-400 text-center text-white text-3xl rounded-t-2xl mt-5 p-5 mb-5">Certificates</h3>
+          <h3 className="bg-gray-400 text-center text-white text-3xl rounded-t-2xl mt-5 p-5 mb-5">
+            Certificates
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-xl bg-gray-400 gap-8 p-6">
             <img
-              src="../../../public/images/Certificates/AcademySertificate-FrontPage.png"
+              src="/images/Certificates/AcademySertificate-FrontPage.png"
               alt="Academy Certificate Front Page"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
             <img
-              src="../../../public/images/Certificates/AcademySertificate-BackPage.png"
+              src="/images/Certificates/AcademySertificate-BackPage.png"
               alt="Academy Certificate Back Page"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
             <img
-              src="../../../public/images/Certificates/Next-Sertificate.png"
+              src="/images/Certificates/Next-Sertificate.png"
               alt="Next Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
             <img
-              src="../../../public/images/Certificates/SparkasseBankSertificate.png"
+              src="/images/Certificates/SparkasseBankSertificate.png"
               alt="Sparkasse Bank Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
             <img
-              src="../../../public/images/Certificates/SavaSertificate.png"
+              src="/images/Certificates/SavaSertificate.png"
               alt="Sava Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
             <img
-              src="../../../public/images/Certificates/LargerWorldSertificate.png"
+              src="/images/Certificates/LargerWorldSertificate.png"
               alt="Larger World Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
