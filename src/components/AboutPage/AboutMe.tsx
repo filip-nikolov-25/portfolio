@@ -30,37 +30,31 @@ const AboutMe = () => {
             <h2 className="text-blue-200 text-6xl mb-20 font-bold">About Me</h2>
             <div className="text-blue-300 text-lg">
               <p className="mt-4">
-                Dynamic and Passionate Frontend Developer As a driven and
-                enthusiastic{" "}
                 <span className="font-bold text-blue-50">
-                  21-year-old Frontend Developer,
+                  As a passionate 21-year-old Frontend Developer,
                 </span>{" "}
-                I specialize in harnessing the power of JavaScript, React, and
-                Next.js to create visually stunning and highly interactive web
-                applications. My dedication to crafting seamless, engaging user
-                experiences allows me to captivate and retain audiences,
-                transforming visitors into loyal users. With a keen eye for
-                detail, I approach every project with a commitment to
-                excellence, ensuring that each interface not only meets but
-                exceeds user expectations. I thrive on the challenge of solving
-                complex problems and take pride in delivering innovative,
-                high-quality web interfaces that reflect the latest industry
-                trends and technologies. My journey in web development is fueled
-                by an insatiable curiosity and a passion for learning. I am
-                continually refining my skills, exploring new frameworks, and
-                expanding my knowledge to stay at the forefront of the
-                ever-evolving tech landscape. I believe that collaboration is
-                key to success, and I am eager to grow within a dynamic,
-                team-oriented environment where creativity and innovation
-                flourish.
+                I specialize in building beautiful, interactive web applications
+                with JavaScript, React, and Next.js. My goal is to create
+                smooth, engaging experiences that keep visitors coming back,
+                turning them into loyal users. I’m dedicated to every project,
+                making sure each interface not only works well but also stands
+                out and meets high standards. I love tackling complex challenges
+                and take pride in creating web designs that are modern and match
+                the latest trends in the industry. Learning is a big part of my
+                journey — I’m always working on my skills, exploring new
+                frameworks, and keeping up with new technology. I also believe
+                that the best results come from teamwork. Working with others
+                brings out creativity and fresh ideas, and I’m excited to grow
+                in a supportive, team-focused environment where innovation is
+                valued.
               </p>
               <p className="mt-10">
-                Beyond coding, I am a self-taught guitarist with a love for
-                music, which serves as a constant source of inspiration in my
-                work. I enjoy traveling and exploring new places, immersing
-                myself in diverse cultures, and sharing my passion for music
-                wherever I go. Let’s work together to build exceptional digital
-                experiences that resonate and inspire!
+                Beyond coding, I’m a self-taught guitarist with a big love for
+                music. Music inspires me in my work and keeps me creative. I
+                also enjoy traveling and exploring new places, connecting with
+                different cultures, and sharing my passion for music along the
+                way. Let’s work together to create digital experiences that
+                people will enjoy and remember!
               </p>
             </div>
           </div>
