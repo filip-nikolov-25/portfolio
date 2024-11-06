@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const MainSection = () => {
   return (
     <div className="text-center p-4 md:p-5">
-      <h1 className="text-4xl md:text-5xl text-pink-700">
+      <h1 className="text-4xl md:text-5xl text-green-300">
         Hi There, my name is
       </h1>
       <h2 className="text-5xl md:text-7xl mt-3 md:mt-6 text-blue-200">
