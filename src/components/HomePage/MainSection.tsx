@@ -30,10 +30,9 @@ const MainSection = () => {
 
       <Link to={"/about"}>
         <button
-          className="mt-4 md:mt-5 pb-2 pt-2 px-5 rounded-xl border-2 border-white bg-blue-300 text-yellow-300 font-bold 
-                           hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300"
+          className="mt-4 md:mt-5 pb-2 pt-2 px-5 rounded-xl border-2 border-white bg-blue-300 text-yellow-300 font-bold hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300"
         >
-         Learn More
+          Learn More
         </button>
       </Link>
     </div>

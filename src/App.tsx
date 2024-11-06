@@ -9,7 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 function App() {
   return (
     <Router>
-      <div className="overflow-x-hidden  relative w-full h-screen">
+      <div className="mt-[-70px] relative w-full h-screen">
         <NavBar />
         <SideBar />
         <Routes>

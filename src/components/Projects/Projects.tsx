@@ -3,7 +3,7 @@ const Projects = () => {
     <div className="bg-gradient-to-l from-purple-900 to-blue-950">
       <div className="mx-auto w-[80%]">
         <h2 className="text-5xl pt-10 pb-10 text-blue-200 text-center">
-          Project's Overview / HOMEPAGE"S
+          Project's Overview 
         </h2>
         <div className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
           <div className="p-4 bg-gray-200 rounded-lg ">
