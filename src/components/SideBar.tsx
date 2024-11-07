@@ -26,7 +26,7 @@ const SideBar = () => {
     {
       name: "CV",
       icon: "fa-solid fa-address-card",
-      link: "https://drive.google.com/file/d/146MEkVUsqFJPTOTAqZCJPKIQ7MV9XeSr/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1RSEvqyeds_USNkai5Ar61ciHgfsenUWW/view?usp=drive_link",
       external: true,
     },
   ];
