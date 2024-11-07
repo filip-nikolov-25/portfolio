@@ -13,7 +13,7 @@ interface CircleType {
 
 const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const requestRef = useRef<number | null>(null); 
+  const requestRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -30,14 +30,23 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
           color: string;
           opacity: number;
 
-          constructor(x: number, y: number, dx: number, dy: number, radius: number) {
+          constructor(
+            x: number,
+            y: number,
+            dx: number,
+            dy: number,
+            radius: number
+          ) {
             this.x = x;
             this.y = y;
             this.dx = dx;
             this.dy = dy;
             this.radius = radius;
             this.minRadius = radius;
-            this.color = circleColorsArr[Math.floor(Math.random() * circleColorsArr.length)];
+            this.color =
+              circleColorsArr[
+                Math.floor(Math.random() * circleColorsArr.length)
+              ];
             this.opacity = 1;
           }
 
@@ -47,7 +56,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
               context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
               context.fillStyle = this.color;
               context.globalAlpha = this.opacity;
-              context.shadowBlur = this.radius > 3 ? 30 : 10; 
+              context.shadowBlur = this.radius > 3 ? 30 : 10;
               context.shadowColor = this.color;
               context.fill();
               context.globalAlpha = 1;
@@ -55,16 +64,20 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
           }
 
           update() {
-      
-            if (this.x + this.radius > canvas!.width || this.x - this.radius < 0) {
+            if (
+              this.x + this.radius > canvas!.width ||
+              this.x - this.radius < 0
+            ) {
               this.dx = -this.dx;
             }
-            if (this.y + this.radius > canvas!.height || this.y - this.radius < 0) {
+            if (
+              this.y + this.radius > canvas!.height ||
+              this.y - this.radius < 0
+            ) {
               this.dy = -this.dy;
             }
-            this.x += this.dx * 0.5; 
+            this.x += this.dx * 0.5;
             this.y += this.dy * 0.5;
-
 
             const distanceX = Math.abs(mouseMove.x - this.x);
             const distanceY = Math.abs(mouseMove.y - this.y);
@@ -83,7 +96,12 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
         function animate() {
           requestRef.current = requestAnimationFrame(animate);
 
-          const gradient = context!.createLinearGradient(0, 0, 0, canvas!.height);
+          const gradient = context!.createLinearGradient(
+            0,
+            0,
+            0,
+            canvas!.height
+          );
           gradient.addColorStop(0, "#0a0c2a");
           gradient.addColorStop(0.3, "#1d1147");
           gradient.addColorStop(0.7, "#340068");
@@ -97,11 +115,19 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
         const mouseMove = { x: 0, y: 0 };
         const maxRadius = 10;
-        const circleColorsArr = ["#ffffff", "#f0e130", "#ff5f56", "#9c88ff", "#50c8ff", "#b8fffc"];
+        const circleColorsArr = [
+          "#ffffff",
+          "#f0e130",
+          "#ff5f56",
+          "#9c88ff",
+          "#50c8ff",
+          "#b8fffc",
+        ];
         const circleArr: CircleType[] = [];
 
         function initializeCircles() {
-          circleArr.length = 0; 
+          //creating the starts or the circles
+          circleArr.length = 0;
           for (let i = 0; i < 400; i++) {
             const radius = Math.random() * 2 + 1;
             const x = Math.random() * (canvas!.width - radius * 2) + radius;
@@ -111,7 +137,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
             circleArr.push(new Circle(x, y, dx, dy, radius));
           }
-
+          //Big Circles - planets
           for (let i = 0; i < 4; i++) {
             const radius = Math.random() * 30 + 15;
             const x = Math.random() * (canvas!.width - radius * 2) + radius;
@@ -122,18 +148,15 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
           }
         }
 
-
         initializeCircles();
         animate();
-
-      
+        //resize the canvas element
         const handleResize = () => {
           canvas.width = window.innerWidth;
           canvas.height = window.innerHeight;
           initializeCircles();
         };
 
- 
         const handleMouseMove = (e: MouseEvent) => {
           mouseMove.x = e.clientX;
           mouseMove.y = e.clientY;
@@ -146,7 +169,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
           window.removeEventListener("mousemove", handleMouseMove);
           window.removeEventListener("resize", handleResize);
           if (requestRef.current) {
-            cancelAnimationFrame(requestRef.current); 
+            cancelAnimationFrame(requestRef.current);
           }
         };
       }
@@ -159,7 +182,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
       {...props}
       width={window.innerWidth}
       height={window.innerHeight}
-      style={{ display: "block" }} 
+
     />
   );
 };
