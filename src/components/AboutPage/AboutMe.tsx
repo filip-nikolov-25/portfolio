@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
+//@ts-expect-error aos has implicity any type
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutMe = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const [corners, setCorners] = useState({
     tl: 20,
     tr: 20,
@@ -26,7 +33,12 @@ const AboutMe = () => {
     <div className="bg-gradient-to-l from-purple-900 to-blue-950">
       <div className="mx-auto w-[90%] max-w-7xl">
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-3/4 p-10 lg:p-20">
+          <div
+            className="w-full lg:w-3/4 p-10 lg:p-20"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <h2 className="text-blue-200 text-6xl mb-20 font-bold">About Me</h2>
             <div className="text-blue-300 text-lg">
               <p className="mt-4">
@@ -58,7 +70,12 @@ const AboutMe = () => {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-1/4 flex justify-center items-center mt-10 lg:mt-0">
+          <div
+            className="w-full lg:w-1/4 flex justify-center items-center mt-10 lg:mt-0"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="/images/img.jpg"
               style={{
@@ -81,31 +98,46 @@ const AboutMe = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-xl bg-gray-400 gap-8 p-6">
             <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
               src="/images/Certificates/AcademySertificate-FrontPage.png"
               alt="Academy Certificate Front Page"
               className="w-full rounded-xl shadow-xl "
             />
             <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
               src="/images/Certificates/AcademySertificate-BackPage.png"
               alt="Academy Certificate Back Page"
               className="w-full rounded-xl shadow-xl "
             />
             <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="3000"
               src="/images/Certificates/Next-Sertificate.png"
               alt="Next Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img
+            <img   data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
               src="/images/Certificates/SparkasseBankSertificate.png"
               alt="Sparkasse Bank Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img
+            <img   data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
               src="/images/Certificates/SavaSertificate.png"
               alt="Sava Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img
+            <img   data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="3000"
               src="/images/Certificates/LargerWorldSertificate.png"
               alt="Larger World Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"

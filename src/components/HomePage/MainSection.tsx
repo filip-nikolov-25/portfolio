@@ -1,8 +1,20 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+//@ts-expect-error aos has implicity any type
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MainSection = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <div className="text-center p-4 md:p-5">
+    <div
+      className="text-center p-4 md:p-5"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <h1 className="text-4xl md:text-5xl text-green-300">
         Hi There, my name is
       </h1>
@@ -29,9 +41,7 @@ const MainSection = () => {
       </div>
 
       <Link to={"/about"}>
-        <button
-          className="mt-4 md:mt-5 pb-2 pt-2 px-5 rounded-xl border-2 border-white bg-blue-300 text-yellow-300 font-bold hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300"
-        >
+        <button className="mt-4 md:mt-5 pb-2 pt-2 px-5 rounded-xl border-2 border-white bg-blue-300 text-yellow-300 font-bold hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300">
           Learn More
         </button>
       </Link>
