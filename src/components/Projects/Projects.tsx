@@ -12,7 +12,7 @@ const Projects = () => {
             </div>
             <img
               src="/images/HomepageSafeBlink.png"
-              className=" rounded-md mt-5"
+              className=" rounded-md border-4 border-pur mt-5"
               alt=""
             />
             <div className="mt-5 border-2  rounded-3xl">
