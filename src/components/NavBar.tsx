@@ -3,26 +3,28 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const pathname = useLocation().pathname;
   return (
-    <div className="flex bg-gradient-to-r from-blue-950 to-purple-900 justify-between pt-6 pb-6 border-b-2 border-b-white pl-20 pr-20 sticky top-0 z-20">
+    <div className="flex bg-gradient-to-r from-blue-950 to-purple-900 justify-between pt-6 pb-6 border-b-2 border-b-white pl-5 pr-5 sticky top-0 z-20">
       <Link to={"/"}>
-        <div className="text-gray-400  hover:text-white font-bold">FN</div>
+        <div className="text-gray-400 hover:text-white font-bold text-xl md:text-2xl">
+          FN
+        </div>
       </Link>
       <div>
-        <ul className="flex space-x-5">
+        <ul className="flex space-x-4 md:space-x-5">
           <Link to={"/"}>
             <li
-              className={` ${
+              className={`${
                 pathname === "/" ? "text-white" : "text-gray-400"
-              }  hover:underline-offset-8  hover:underline hover:text-white cursor-pointer`}
+              } text-base md:text-lg hover:underline-offset-8 hover:underline hover:text-white cursor-pointer`}
             >
               Home
             </li>
           </Link>
           <Link to={"/about"}>
             <li
-              className={` ${
+              className={`${
                 pathname === "/about" ? "text-white" : "text-gray-400"
-              }  hover:underline-offset-8  hover:underline hover:text-white cursor-pointer`}
+              } text-base md:text-lg hover:underline-offset-8 hover:underline hover:text-white cursor-pointer`}
             >
               About
             </li>
@@ -30,9 +32,9 @@ const NavBar = () => {
 
           <Link to={"/projects"}>
             <li
-              className={` ${
+              className={`${
                 pathname === "/projects" ? "text-white" : "text-gray-400"
-              }  hover:underline-offset-8  hover:underline hover:text-white cursor-pointer`}
+              } text-base md:text-lg hover:underline-offset-8 hover:underline hover:text-white cursor-pointer`}
             >
               Projects
             </li>
