@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 //@ts-expect-error aos has implicity any type
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TechStack from "./TechStack";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -45,20 +46,17 @@ const AboutMe = () => {
                 <span className="font-bold text-blue-50">
                   As a passionate 21-year-old Frontend Developer,
                 </span>{" "}
-                I specialize in building beautiful, interactive web applications
-                with JavaScript, React, and Next.js. My goal is to create
-                smooth, engaging experiences that keep visitors coming back,
-                turning them into loyal users. I’m dedicated to every project,
-                making sure each interface not only works well but also stands
-                out and meets high standards. I love tackling complex challenges
-                and take pride in creating web designs that are modern and match
-                the latest trends in the industry. Learning is a big part of my
-                journey — I’m always working on my skills, exploring new
-                frameworks, and keeping up with new technology. I also believe
-                that the best results come from teamwork. Working with others
-                brings out creativity and fresh ideas, and I’m excited to grow
-                in a supportive, team-focused environment where innovation is
-                valued.
+                I build interactive web apps using JavaScript, React, and
+                Next.js, aiming to make them both smooth and engaging so
+                visitors want to come back. I put a lot of effort into every
+                project, making sure each design not only works well but also
+                looks great and meets high standards. I enjoy solving tough
+                problems and creating modern web designs that keep up with the
+                latest trends. I’m always working to improve my skills, trying
+                out new tools, and staying updated on tech. I also believe in
+                teamwork — it sparks new ideas and brings out the best results.
+                I'm excited to grow in a team that values creativity and
+                collaboration.
               </p>
               <p className="mt-10">
                 Beyond coding, I’m a self-taught guitarist with a big love for
@@ -91,6 +89,8 @@ const AboutMe = () => {
           </div>
         </div>
         <hr className="w-full my-5" />
+        <TechStack />
+        <hr className="w-full my-10" />
 
         <div>
           <h3 className="bg-gray-400 text-center text-white text-3xl rounded-t-2xl mt-5 p-5 mb-5">
@@ -121,21 +121,24 @@ const AboutMe = () => {
               alt="Next Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img   data-aos="fade-up"
+            <img
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1000"
               src="/images/Certificates/SparkasseBankSertificate.png"
               alt="Sparkasse Bank Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img   data-aos="fade-up"
+            <img
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="2000"
               src="/images/Certificates/SavaSertificate.png"
               alt="Sava Certificate"
               className="w-full rounded-xl shadow-xl "
             />
-            <img   data-aos="fade-up"
+            <img
+              data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="3000"
               src="/images/Certificates/LargerWorldSertificate.png"
