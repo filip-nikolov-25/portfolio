@@ -128,12 +128,12 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
         function initializeCircles() {
           //creating the starts or the circles
           circleArr.length = 0;
-          for (let i = 0; i < 400; i++) {
+          for (let i = 0; i < 800; i++) {
             const radius = Math.random() * 2 + 1;
             const x = Math.random() * (canvas!.width - radius * 2) + radius;
             const y = Math.random() * (canvas!.height - radius * 2) + radius;
-            const dx = (Math.random() - 0.5) * 0.5;
-            const dy = (Math.random() - 0.5) * 0.5;
+            const dx = (Math.random() - 0.5) * 0.3;
+            const dy = (Math.random() - 0.5) * 0.3;
 
             circleArr.push(new Circle(x, y, dx, dy, radius));
           }
