@@ -19,10 +19,10 @@ const AboutMe = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCorners((prevCorners) => {
-        const newTl = prevCorners.tl >= 40 ? 20 : prevCorners.tl + 3;
-        const newTr = prevCorners.tr >= 60 ? 20 : prevCorners.tr + 5;
-        const newBl = prevCorners.bl >= 60 ? 20 : prevCorners.bl + 5;
-        const newBr = prevCorners.br >= 40 ? 20 : prevCorners.br + 3;
+        const newTl = prevCorners.tl >= 40 ? 20 : prevCorners.tl + 12;
+        const newTr = prevCorners.tr >= 60 ? 20 : prevCorners.tr + 15;
+        const newBl = prevCorners.bl >= 60 ? 20 : prevCorners.bl + 15;
+        const newBr = prevCorners.br >= 40 ? 20 : prevCorners.br + 12;
         return { tl: newTl, tr: newTr, bl: newBl, br: newBr };
       });
     }, 1000);

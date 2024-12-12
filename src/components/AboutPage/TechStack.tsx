@@ -19,7 +19,7 @@ const TechStack = () => {
       <div className="rounded-xl bg-gray-400 flex justify-center items-center p-10">
         <img
           src="/images/TechStackIcons/bootstrap-img-icon.png"
-          className="w-10/12 rounded-xl"
+          className="w-8/12 rounded-xl"
           alt="Bootstrap icon"
         />
       </div>
@@ -33,17 +33,17 @@ const TechStack = () => {
       <div className="rounded-xl bg-gray-400 flex justify-center items-center p-10">
         <img
           src="/images/TechStackIcons/ts-icon.png"
-          className="w-10/12 rounded-xl"
+          className="w-8/12 rounded-xl"
           alt="TypeScript icon"
         />
       </div>
       <div className="rounded-xl bg-gray-400 flex justify-center items-center p-10">
-        <i className="fa-brands fa-react text-5xl text-blue-200"></i>
+        <i className="fa-brands fa-react text-8xl text-blue-200"></i>
       </div>
       <div className="rounded-xl bg-gray-400 flex justify-center items-center p-10">
         <img
           src="/images/TechStackIcons/next-icon-img.png"
-          className="w-10/12 rounded-xl"
+          className="w-8/12 rounded-xl"
           alt="Next.js icon"
         />
       </div>

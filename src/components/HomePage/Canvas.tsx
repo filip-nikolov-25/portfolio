@@ -150,7 +150,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
         initializeCircles();
         animate();
-        //resize the canvas element
+        //resize the element
         const handleResize = () => {
           canvas.width = window.innerWidth;
           canvas.height = window.innerHeight;
