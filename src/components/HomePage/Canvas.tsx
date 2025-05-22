@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-
 interface CircleType {
   x: number;
   y: number;
@@ -76,8 +75,8 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
             ) {
               this.dy = -this.dy;
             }
-            this.x += this.dx * 0.5;
-            this.y += this.dy * 0.5;
+            this.x += this.dx * 10;
+            this.y += this.dy * 5;
 
             const distanceX = Math.abs(mouseMove.x - this.x);
             const distanceY = Math.abs(mouseMove.y - this.y);
@@ -114,7 +113,7 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
         }
 
         const mouseMove = { x: 0, y: 0 };
-        const maxRadius = 10;
+        const maxRadius = 25;
         const circleColorsArr = [
           "#ffffff",
           "#f0e130",
@@ -126,7 +125,6 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
         const circleArr: CircleType[] = [];
 
         function initializeCircles() {
-          //creating the starts or the circles
           circleArr.length = 0;
           for (let i = 0; i < 800; i++) {
             const radius = Math.random() * 2 + 1;
@@ -137,7 +135,6 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
             circleArr.push(new Circle(x, y, dx, dy, radius));
           }
-          //Big Circles - planets
           for (let i = 0; i < 4; i++) {
             const radius = Math.random() * 30 + 15;
             const x = Math.random() * (canvas!.width - radius * 2) + radius;
@@ -150,7 +147,6 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
 
         initializeCircles();
         animate();
-        //resize the element
         const handleResize = () => {
           canvas.width = window.innerWidth;
           canvas.height = window.innerHeight;
@@ -182,7 +178,6 @@ const Canvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
       {...props}
       width={window.innerWidth}
       height={window.innerHeight}
-
     />
   );
 };

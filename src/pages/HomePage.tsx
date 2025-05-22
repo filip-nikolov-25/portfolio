@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <Canvas />
-      <div className="absolute inset-0 flex flex-col items-center justify-center mt-20 z-10">
+      <div className="absolute inset-0 flex flex-col items-center justify-start mt-24 z-10">
         <MainSection />
       </div>
     </div>

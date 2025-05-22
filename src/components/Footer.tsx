@@ -12,7 +12,6 @@ const Footer = () => {
               <div className="text-center">
                 <p className="pt-10 mb-5 ">Contact me</p>
                 <p className="mb-5">filip.nikolov1010@gmail.com</p>
-                <p>Probishtip/Skopje,North Macedonia</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-//@ts-expect-error aos has implicity any type
+//@ts-expect-error aos has implicit any type
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -8,6 +8,7 @@ const MainSection = () => {
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
+
   return (
     <div
       className="text-center p-4 md:p-5"
@@ -15,34 +16,34 @@ const MainSection = () => {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <h1 className="text-4xl md:text-5xl text-green-300">
-        Hi There, my name is
-      </h1>
-      <h2 className="text-5xl md:text-7xl mt-3 md:mt-6 text-blue-200">
+      <h2 className="text-4xl md:text-6xl mb-12 md:mt-4 text-blue-200">
         Filip Nikolov
       </h2>
-      <h3 className="text-2xl md:text-3xl mt-2 md:mt-4 text-blue-200">
+      <h3 className="text-xl md:text-3xl mt-1 md:mt-3 text-blue-200">
         Front-End Developer
       </h3>
 
-      <div className="w-full max-w-lg mx-auto">
-        <p className="mt-4 md:mt-5 text-blue-200 text-base md:text-lg leading-relaxed">
-          I'm a Frontend Developer who loves building smooth and engaging
-          websites. Skilled in JavaScript, React, and Next.js, I'm always
-          working to improve my abilities and learn new things. I pay close
-          attention to details and take pride in creating easy-to-use,
-          high-quality interfaces. I'm excited to work in a team where I can
-          grow and make an impact.
+      <div className="w-full max-w-2xl mx-auto">
+        <p className="mt-3 md:mt-4 text-blue-200 text-base md:text-lg leading-relaxed">
+          I’m a Frontend Developer with solid experience building smooth,
+          engaging websites using JavaScript, React, and Next.js. Alongside
+          frontend development, I have hands-on experience with backend
+          technologies like Node.js, GraphQL, and PostgreSQL. I’m passionate
+          about delivering high-quality, user-friendly interfaces and solving
+          complex challenges through clean, efficient code. I love working in
+          teams where collaboration sparks creativity and drives better results.
+          Committed to continuous learning and collaboration, I thrive in
+          environments where I can contribute to impactful projects.
         </p>
       </div>
 
-      <div className="mt-4 md:mt-5">
+      <div className="mt-3 md:mt-4">
         <i className="fa-solid fa-angle-down text-4xl md:text-5xl text-sky-300 hover:text-white"></i>
       </div>
 
       <Link to={"/about"}>
-        <button className="mt-4 md:mt-5 pb-2 pt-2 px-5 rounded-xl border-2 border-white bg-blue-300 text-yellow-300 font-bold hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300">
-          Learn More
+        <button className="mt-3 md:mt-4 pb-2 pt-2 px-6 rounded-xl border-2 border-white bg-blue-300 text-sm md:text-xl text-white hover:bg-white hover:text-pink-700 hover:border-pink-700 transition-all duration-300">
+          Get to know me
         </button>
       </Link>
     </div>

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
-  const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const icons = [
     {
@@ -31,37 +32,50 @@ const SideBar = () => {
     },
   ];
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 425px)");
+    const updateMobile = (e: MediaQueryList | MediaQueryListEvent) =>
+      setIsMobile(e.matches);
+
+    updateMobile(mediaQuery);
+    mediaQuery.addEventListener("change", updateMobile);
+    return () => mediaQuery.removeEventListener("change", updateMobile);
+  }, []);
+
   return (
-    <div className="sticky mt-[-244px] left-0 z-50 top-1/3">
-      {icons.map((item, index) => (
-        <div
-          key={index}
-          className={`flex mb-2 items-center p-2 transition-all duration-300 ${
-            hovered === index ? "w-40" : "w-12"
-          } rounded-r-full hover:bg-gray-700`}
-          // @ts-expect-error argument of type number is not assignable to parameter of type setStateAction<null>
-          onMouseEnter={() => setHovered(index)}
-          onMouseLeave={() => setHovered(null)}
-        >
-          {item.external ? (
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center"
-            >
-              <i className={`${item.icon} text-white text-4xl`} />
-            </a>
-          ) : (
-            <Link to={item.link} className="flex items-center">
-              <i className={`${item.icon} text-white text-4xl`} />
-            </Link>
-          )}
-          {hovered === index && (
-            <span className="ml-2 text-white">{item.name}</span>
-          )}
-        </div>
-      ))}
+    <div
+      className={`fixed z-50 ${
+        isMobile
+          ? "bottom-[-3px] left-1/2 transform -translate-x-1/2   flex flex-row gap-3"
+          : "top-1/3 left-0 flex flex-col"
+      }`}
+    >
+      {icons.map((item, index) => {
+        const content = (
+          <div
+            className={`flex items-center p-3 rounded-full transition-all duration-300 hover:bg-gray-700 ${
+              isMobile ? "flex-col" : "flex-row w-12 hover:w-40"
+            }`}
+            onMouseEnter={() => !isMobile && setHovered(index)}
+            onMouseLeave={() => !isMobile && setHovered(null)}
+          >
+            <i className={`${item.icon}  ${isMobile ? "text-4xl text-blue-200" : "text-5xl text-white"} `} />
+            {!isMobile && hovered === index && (
+              <span className="ml-2 text-white">{item.name}</span>
+            )}
+          </div>
+        );
+
+        return item.external ? (
+          <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+            {content}
+          </a>
+        ) : (
+          <Link key={index} to={item.link}>
+            {content}
+          </Link>
+        );
+      })}
     </div>
   );
 };

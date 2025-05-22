@@ -2,12 +2,13 @@ interface ProjectCardType {
   title: string;
   images?: string[]; 
   description: string;
+  bigTitle:boolean
 }
 
-const ProjectCard = ({ title, images = [], description }: ProjectCardType) => {
+const ProjectCard = ({ title, images = [], description,bigTitle }: ProjectCardType) => {
   return (
     <div className="p-4 bg-gray-200 rounded-lg">
-      <div className="p-5 rounded-xl mb-5 text-3xl text-center animate-pulse text-purple-900 font-bold bg-gray-400">
+      <div className={`p-5 rounded-xl mb-5 ${bigTitle ? 'text-2xl' : "text-3xl"}  text-center animate-pulse text-purple-900 font-bold bg-gray-400`}>
         {title}
       </div>
       {images.length === 1 ? (

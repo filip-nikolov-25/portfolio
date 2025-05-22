@@ -1,11 +1,9 @@
 
-module.exports = {
-  content: [
-    './index.html',         // Include your HTML files
-    './src/**/*.{js,jsx,ts,tsx}',  // Include all your React components
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+export const content = [
+  './index.html', 
+  './src/**/*.{js,jsx,ts,tsx}',
+];
+export const theme = {
+  extend: {},
 };
+export const plugins = [];

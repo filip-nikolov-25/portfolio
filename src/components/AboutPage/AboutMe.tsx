@@ -25,13 +25,13 @@ const AboutMe = () => {
         const newBr = prevCorners.br >= 40 ? 20 : prevCorners.br + 12;
         return { tl: newTl, tr: newTr, bl: newBl, br: newBr };
       });
-    }, 1000);
+    }, 800);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bg-gradient-to-l from-purple-900 to-blue-950">
+    <div className="bg-gradient-to-l pt-16 mt-[-62px] from-purple-900 to-blue-950">
       <div className="mx-auto w-[90%] max-w-7xl">
         <div className="flex flex-col lg:flex-row">
           <div
@@ -40,12 +40,13 @@ const AboutMe = () => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <h2 className="text-blue-200 text-6xl mb-20 font-bold">About Me</h2>
+            <h2 className="text-blue-200 text-6xl mb-12 font-bold">About Me</h2>
+
             <div className="text-blue-300 text-lg">
-              <p className="mt-4">
+              <p>
                 <span className="font-bold text-blue-50">
                   As a passionate 21-year-old Frontend Developer,
-                </span>{" "}
+                </span>
                 I build interactive web apps using JavaScript, React, and
                 Next.js, aiming to make them both smooth and engaging so
                 visitors want to come back. I put a lot of effort into every
@@ -58,7 +59,35 @@ const AboutMe = () => {
                 I'm excited to grow in a team that values creativity and
                 collaboration.
               </p>
-              <p className="mt-10">
+
+              <p className="mt-6">
+                I recently gained hands-on experience working as a{" "}
+                <span className="text-blue-50">Full-Stack Developer</span> on a
+                real-world{" "}
+                <span className="text-blue-50">clinic management software</span>{" "}
+                project during my internship. I worked closely with the
+                development team to design, implement, and deliver new features
+                within a live production environment. Throughout the internship,
+                I worked with technologies like{" "}
+                <span className="text-blue-50">GraphQL, Node.js, Next.js,</span>{" "}
+                and wrote{" "}
+                <span className="text-blue-50">unit tests using Jest.</span> I
+                also worked with{" "}
+                <span className="text-blue-50">PostgreSQL</span> and{" "}
+                <span className="text-blue-50">MySQL</span> databases, helped
+                manage the <span className="text-blue-50">CI/CD pipeline,</span>{" "}
+                and dealt with both{" "}
+                <span className="text-blue-50">
+                  legacy and modern codebases.
+                </span>{" "}
+                This experience gave me a solid understanding of how software
+                development operates in a professional team setting — from
+                debugging and performance tuning to collaborating across
+                functions and delivering high-quality, production-ready
+                solutions.
+              </p>
+
+              <p className="mt-6">
                 Beyond coding, I’m a self-taught guitarist with a big love for
                 music. Music inspires me in my work and keeps me creative. I
                 also enjoy traveling and exploring new places, connecting with
@@ -70,8 +99,8 @@ const AboutMe = () => {
           </div>
           <div
             className="w-full lg:w-1/4 flex justify-center items-center mt-10 lg:mt-0"
-            data-aos="fade-left"
-            data-aos-offset="300"
+            data-aos="fade-right"
+            data-aos-offset="30"
             data-aos-easing="ease-in-sine"
           >
             <img
