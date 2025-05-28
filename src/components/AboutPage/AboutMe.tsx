@@ -45,7 +45,7 @@ const AboutMe = () => {
             <div className="text-blue-300 text-lg">
               <p>
                 <span className="font-bold text-blue-50">
-                  As a passionate 21-year-old Frontend Developer,
+                  As a passionate 22-year-old Frontend Developer,
                 </span>
                 I build interactive web apps using JavaScript, React, and
                 Next.js, aiming to make them both smooth and engaging so
