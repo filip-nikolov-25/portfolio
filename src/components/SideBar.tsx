@@ -15,7 +15,7 @@ const SideBar = () => {
     {
       name: "GitHub",
       icon: "fa-brands fa-square-github",
-      link: "https://github.com/filip-nikolov-25/Projects",
+      link: "https://github.com/filip-nikolov-25",
       external: false,
     },
     {
