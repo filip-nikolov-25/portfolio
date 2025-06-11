@@ -130,7 +130,7 @@ const AboutMe = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1000"
-              src="/images/Certificates/AcademySertificate-FrontPage.png"
+              src="/images/Certificates/AcademyCertificate-FrontPage.png"
               alt="Academy Certificate Front Page"
               className="w-full rounded-xl shadow-xl "
             />
@@ -138,7 +138,7 @@ const AboutMe = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="2000"
-              src="/images/Certificates/AcademySertificate-BackPage.png"
+              src="/images/Certificates/AcademyCertificate-BackPage.png"
               alt="Academy Certificate Back Page"
               className="w-full rounded-xl shadow-xl "
             />
@@ -146,7 +146,7 @@ const AboutMe = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="3000"
-              src="/images/Certificates/Next-Sertificate.png"
+              src="/images/Certificates/Next-Certificate.png"
               alt="Next Certificate"
               className="w-full rounded-xl shadow-xl "
             />
@@ -154,7 +154,7 @@ const AboutMe = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1000"
-              src="/images/Certificates/SparkasseBankSertificate.png"
+              src="/images/Certificates/SparkasseBankCertificate.png"
               alt="Sparkasse Bank Certificate"
               className="w-full rounded-xl shadow-xl "
             />
@@ -162,7 +162,7 @@ const AboutMe = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="2000"
-              src="/images/Certificates/SavaSertificate.png"
+              src="/images/Certificates/SavaCertificate.png"
               alt="Sava Certificate"
               className="w-full rounded-xl shadow-xl "
             />
@@ -170,8 +170,16 @@ const AboutMe = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="3000"
-              src="/images/Certificates/LargerWorldSertificate.png"
+              src="/images/Certificates/LargerWorldCertificate.png"
               alt="Larger World Certificate"
+              className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
+            />
+            <img
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="3000"
+              src="/images/Certificates/InternshipCertificate.jpg"
+              alt="Internship Certificate"
               className="w-full rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl"
             />
           </div>
