@@ -22,7 +22,7 @@ const SideBar = () => {
       name: "Email",
       icon: "fa-solid fa-envelope",
       link: "mailto:filip.nikolov1010@gmail.com",
-      external: false,
+      external: true,
     },
     {
       name: "CV",
@@ -33,7 +33,7 @@ const SideBar = () => {
   ];
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 425px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     const updateMobile = (e: MediaQueryList | MediaQueryListEvent) =>
       setIsMobile(e.matches);
 
