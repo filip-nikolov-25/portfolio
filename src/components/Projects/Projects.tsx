@@ -5,7 +5,8 @@ const Projects = () => {
     {
       title: "SongBook - Chords for Guitar",
       images: ["/images/SongBook/SongBookSS.png"],
-      description: `COMING SOON`,
+      description:
+        "Songbook is a web application made for musicians to easily find, filter, and play their favorite songs with chords. Whether you're practicing solo or jamming with friends, Songbook provides a clean and organized interface to keep your favorite tunes just a click away. Features include searching and filtering songs by name or genre, displaying chords inline with lyrics, and a mobile-friendly responsive design. Built with Next.js and Firebase, it offers fast and secure authentication. Tech stack: Frontend with Next.js, TypeScript, Tailwind CSS  Backend and database with Firebase Firestore, Auth, and Realtime Database ",
     },
     {
       title: "VibeOnEdu",
