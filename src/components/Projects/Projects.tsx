@@ -72,7 +72,7 @@ const Projects = () => {
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-500" />
               
-              <div className="relative flex h-full flex-col bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
+              <div className="relative pb-5 flex h-full flex-col bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
                 <ProjectCard
                   title={project.title}
                   images={project.images}
@@ -80,7 +80,7 @@ const Projects = () => {
                   bigTitle={index === 0}
                 />
                 
-                <div className="px-6 pb-6 mt-auto flex flex-wrap gap-2">
+                <div className="px-6 pb-6 mt-5 flex flex-wrap gap-2">
                   {project.tags?.map((tag) => (
                     <span key={tag} className="text-[10px] uppercase tracking-tighter px-2 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 rounded-md">
                       {tag}
