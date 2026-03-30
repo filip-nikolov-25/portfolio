@@ -4,6 +4,13 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectData = [
     {
+      title: "Clockly- Time Managment System",
+      images: ["/images/Clockly/Clockly-time.png"],
+      tags: ["ReactJS", "PostgreSQL", "Tailwind", "Node JS","JWT Authentication","Email Notifications"],
+      description:
+        "Clockly is a full-stack app for tracking work hours and managing employees Employees can log their working time, request days off, and receive notifications. Admins can manage users, review work logs, and approve or reject requests from one place. Built with ReactJS, PostgreSQL, Tailwind, and Node JS, Clockly streamlines time management for businesses of all sizes.",
+    },
+    {
       title: "SongBook - Chords for Guitar",
       images: ["/images/SongBook/SongBookSS.png"],
       tags: ["Next.js", "Firebase", "Tailwind"],
@@ -45,7 +52,7 @@ const Projects = () => {
   return (
     <section className="relative min-h-screen py-24 overflow-hidden bg-[#020617]">
       <SpaceCanvas />
-      
+
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-blue-600/10 blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 mx-auto w-[90%] max-w-7xl">
@@ -64,14 +71,14 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {projectData.map((project, index) => (
-            <div 
-              key={index} 
-              data-aos="fade-up" 
+            <div
+              key={index}
+              data-aos="fade-up"
               data-aos-delay={index * 100}
               className="group relative"
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-500" />
-              
+
               <div className="relative pb-5 flex h-full flex-col bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300">
                 <ProjectCard
                   title={project.title}
@@ -79,10 +86,13 @@ const Projects = () => {
                   description={project.description}
                   bigTitle={index === 0}
                 />
-                
+
                 <div className="px-6 pb-6 mt-5 flex flex-wrap gap-2">
                   {project.tags?.map((tag) => (
-                    <span key={tag} className="text-[10px] uppercase tracking-tighter px-2 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 rounded-md">
+                    <span
+                      key={tag}
+                      className="text-[10px] uppercase tracking-tighter px-2 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 rounded-md"
+                    >
                       {tag}
                     </span>
                   ))}
