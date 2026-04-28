@@ -47,7 +47,7 @@ const AboutMe = () => {
             <div className="space-y-6 text-slate-300 leading-relaxed text-lg lg:text-xl">
               <p>
                 <span className="text-white font-bold text-2xl block mb-2">
-                  Building the digital frontier at 22.
+                  Building the digital frontier at 23.
                 </span>
                 I am a Frontend Developer dedicated to creating high-performance, immersive web applications using 
                 <span className="text-blue-400 font-semibold"> React, Next.js, and TypeScript</span>.
