@@ -25,7 +25,6 @@ const AboutMe = () => {
   }, []);
 
   return (
-    // Changed: Removed min-h-screen, added py-20 for better layout control
     <section className="relative w-full overflow-hidden bg-[#020617] py-20">
       <SpaceCanvas />
       
