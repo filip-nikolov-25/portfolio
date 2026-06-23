@@ -71,12 +71,12 @@ const SpaceCanvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < 100) {
-          this.radius = Math.min(this.baseRadius * 2.5, this.radius + 0.1);
+          this.radius = Math.min(this.baseRadius * 8.5, this.radius + 0.1);
         } else {
           this.radius = Math.max(this.baseRadius, this.radius - 0.1);
         }
 
-        // Reset star if it leaves the top
+        // Reset star if it leavess the top
         if (this.y < -10) {
           this.y = canvas!.height + 10;
           this.x = Math.random() * canvas!.width;
@@ -87,34 +87,27 @@ const SpaceCanvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
     }
 
     const init = () => {
-      // Handle High-DPI displays (Retina) for sharpness
       const dpr = window.devicePixelRatio || 1;
       const displayWidth = window.innerWidth;
       const displayHeight = window.innerHeight;
 
-      // Set actual drawing surface size
       canvas.width = displayWidth * dpr;
       canvas.height = displayHeight * dpr;
 
-      // Scale context to match CSS pixels
       ctx.scale(dpr, dpr);
 
-      // Reset dimensions for the Star logic to match screen size
-      // We use the CSS pixels for the star positions
       const screenArea = displayWidth * displayHeight;
       
-      // Responsive Density: More stars for desktop, fewer for mobile
-      // Roughly 1 star per 3000 pixels
-      const starCount = Math.floor(screenArea / 3000);
+
+      const starCount = Math.floor(screenArea / 1000);
       
       stars = [];
-      for (let i = 0; i < Math.min(starCount, 800); i++) {
+      for (let i = 0; i < Math.min(starCount, 1000); i++) {
         stars.push(new Star());
       }
     };
 
     const animate = () => {
-      // Use CSS pixels for the gradient center
       const centerX = window.innerWidth / 2;
       const centerY = window.innerHeight / 2;
       const radius = Math.max(window.innerWidth, window.innerHeight);
@@ -128,7 +121,6 @@ const SpaceCanvas = (props: React.CanvasHTMLAttributes<HTMLCanvasElement>) => {
       gradient.addColorStop(1, "#020205");
 
       ctx.fillStyle = gradient;
-      // Use the CSS dimensions for clearing
       ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
       stars.forEach((star) => star.update());
