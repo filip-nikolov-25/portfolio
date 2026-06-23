@@ -64,14 +64,7 @@ const MainSection = () => {
         </Link>
       </div>
 
-      <div 
-        data-aos="fade-in" 
-        data-aos-delay="800" 
-        className="absolute -bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-50 hover:opacity-100 transition-opacity cursor-pointer hidden md:flex"
-      >
-        <span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Scroll</span>
-        <i className="fa-solid fa-angle-down text-xl text-blue-400 animate-bounce"></i>
-      </div>
+  
     </div>
   );
 };

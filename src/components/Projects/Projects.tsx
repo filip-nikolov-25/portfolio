@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "Clockly - Employee Management & Time Tracking",
       link: "https://www.clockly.it.com/",
-      imageFit: "contain", 
+      imageFit: "contain",
       images: ["/images/Clockly/Clockly-time.png"],
       tags: [
         "ReactJS",
@@ -19,12 +19,15 @@ const Projects = () => {
       description:
         "Clockly is a modern full-stack employee management and time tracking platform designed to simplify HR workflows. Employees can log working hours, request leave, track availability, and receive notifications. Administrators can manage employees, approve requests, monitor work statistics, and control company workflows from a centralized dashboard.",
       features: [
-        "Multi-company architecture",
-        "Role-based permissions",
-        "Weekly & monthly scheduling",
-        "Leave request workflows",
-        "Automated email notifications",
-        "Work hour analytics dashboard",
+        "Multi-company architecture & data isolation",
+        "Secure JWT & Role-Based Access Control",
+        "Real-time employee time & absence tracking",
+        "Interactive weekly & monthly calendar schedules",
+        "Automated leave request workflows",
+        "Dynamic multi-country public holiday tracking",
+        "Automated Resend email notifications",
+        "Work hour analytics & admin dashboards",
+        "Optimized REST API with pagination",
       ],
     },
     {
@@ -265,6 +268,11 @@ const Projects = () => {
                       {!isFeatured && project.features.length > 3 && (
                         <div className="text-[10px] text-blue-400/70 italic pl-6 pt-1 font-medium">
                           + {project.features.length - 3} more features
+                        </div>
+                      )}
+                      {isFeatured && project.features.length > 6 && (
+                        <div className="text-[10px] text-blue-400/70 italic pl-6 pt-1 font-medium sm:col-span-2 mt-2 border-t border-white/5 pt-3">
+                          + {project.features.length - 6} more core capabilities integrated
                         </div>
                       )}
                     </div>

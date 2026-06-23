@@ -25,7 +25,8 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#020617]">
+    // Changed: Removed min-h-screen, added py-20 for better layout control
+    <section className="relative w-full overflow-hidden bg-[#020617] py-20">
       <SpaceCanvas />
       
       <div className="pointer-events-none absolute inset-0">
@@ -33,36 +34,37 @@ const AboutMe = () => {
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-900/20 blur-[120px] rounded-full" />
       </div>
 
-      <div className="relative z-10 mx-auto w-[90%] max-w-7xl pt-32 pb-20">
+      <div className="relative z-10 mx-auto w-[90%] max-w-7xl">
         
         <div 
-          className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 lg:p-16 rounded-[2rem] shadow-2xl"
+          className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 lg:p-12 rounded-[2rem] shadow-2xl"
           data-aos="fade-up"
         >
           <div className="w-full lg:w-2/3">
-            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-purple-300 text-5xl lg:text-7xl mb-8 font-black tracking-tighter">
+            <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-purple-300 text-5xl lg:text-6xl mb-6 font-black tracking-tighter">
               About Me
             </h2>
 
-            <div className="space-y-6 text-slate-300 leading-relaxed text-lg lg:text-xl">
+            <div className="space-y-5 text-slate-300 leading-relaxed text-lg">
               <p>
-                <span className="text-white font-bold text-2xl block mb-2">
-                  Building the digital frontier at 23.
+                <span className="text-white font-bold text-xl block mb-2">
+                  Innovative & Strategic Software Engineer.
                 </span>
-                I am a Frontend Developer dedicated to creating high-performance, immersive web applications using 
-                <span className="text-blue-400 font-semibold"> React, Next.js, and TypeScript</span>.
+                I specialize in modern frontend development, building scalable, high-performance applications. 
+                My expertise lies in <span className="text-blue-400 font-semibold">JavaScript (ES6+), TypeScript, and React.js</span>, 
+                with a focus on architecting clean, maintainable codebases within Agile environments.
               </p>
 
-              <div className="p-6 bg-gradient-to-r from-blue-500/10 to-transparent border-l-2 border-blue-500 rounded-r-xl">
+              <div className="p-5 bg-gradient-to-r from-blue-500/10 to-transparent border-l-2 border-blue-500 rounded-r-xl">
                 <p className="italic text-blue-100/80">
-                  "I specialize in bridging the gap between complex backend logic and fluid, human-centric design."
+                  "I am dedicated to bridging the gap between complex backend logic and fluid, human-centric design, ensuring every pixel serves a purpose."
                 </p>
               </div>
 
               <p>
-                Beyond the code, I’m a self-taught guitarist. I find that the discipline of music 
-                perfectly complements the creative logic of programming—both require 
-                rhythm, structure, and constant iteration.
+                Beyond the technical scope, I bring a collaborative mindset to cross-functional teams. 
+                When I'm not coding, I draw inspiration from music—as a self-taught guitarist, 
+                I find that the discipline and rhythm of music perfectly mirror the creative logic required in software development.
               </p>
             </div>
           </div>
@@ -79,27 +81,27 @@ const AboutMe = () => {
                   borderBottomRightRadius: `${corners.br}%`,
                   transition: "border-radius 2.5s ease-in-out",
                 }}
-                className="relative w-72 h-72 lg:w-96 lg:h-96 object-cover border border-white/20 shadow-2xl"
+                className="relative w-64 h-64 lg:w-80 lg:h-80 object-cover border border-white/20 shadow-2xl"
                 alt="Profile"
               />
             </div>
           </div>
         </div>
 
-        <div className="mt-24" data-aos="fade-up">
-          <div className="flex items-center gap-6 mb-12">
-            <h3 className="text-white text-2xl font-bold whitespace-nowrap">Arsenal</h3>
+        <div className="mt-20" data-aos="fade-up">
+          <div className="flex items-center gap-6 mb-10">
+            <h3 className="text-white text-2xl font-bold whitespace-nowrap">Technical Arsenal</h3>
             <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-transparent"></div>
           </div>
           <TechStack />
         </div>
 
-        <div className="mt-32"> 
-          <div className="flex items-center gap-6 mb-16">
+        <div className="mt-24"> 
+          <div className="flex items-center gap-6 mb-12">
             <h3 className="text-white text-3xl lg:text-4xl font-bold whitespace-nowrap">Certifications</h3>
             <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-transparent"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {[
               { src: "AcademyCertificate-FrontPage.png", delay: "0", title: "Academy Graduate" },
               { src: "Next-Certificate.png", delay: "100", title: "Next.js Professional" },
@@ -110,22 +112,20 @@ const AboutMe = () => {
                 key={idx}
                 data-aos="zoom-in-up"
                 data-aos-delay={cert.delay}
-                className="group relative overflow-hidden rounded-[2.5rem] bg-white/[0.02] border border-white/10 p-4 hover:border-blue-500/30 transition-all duration-700 shadow-2xl"
+                className="group relative overflow-hidden rounded-[2rem] bg-white/[0.02] border border-white/10 p-3 hover:border-blue-500/30 transition-all duration-700 shadow-2xl"
               >
-      
                 <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-3xl" />
                 
-                <div className="relative overflow-hidden rounded-[1.8rem]">
+                <div className="relative overflow-hidden rounded-[1.5rem]">
                   <img
                     src={`/images/Certificates/${cert.src}`}
                     alt={cert.title}
                     className="w-full h-auto grayscale-[0.4] group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
                   />
                   
- 
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 lg:p-12">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 lg:p-8">
                     <p className="text-blue-400 font-bold text-xs tracking-[0.3em] uppercase mb-2">Verified Achievement</p>
-                    <h4 className="text-white text-2xl lg:text-3xl font-bold">{cert.title}</h4>
+                    <h4 className="text-white text-xl lg:text-2xl font-bold">{cert.title}</h4>
                   </div>
                 </div>
               </div>
