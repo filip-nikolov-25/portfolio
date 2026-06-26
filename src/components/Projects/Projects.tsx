@@ -14,8 +14,7 @@ const Projects = () => {
         "Tailwind",
         "Node JS",
         "JWT Authentication",
-        "Email Notifications",
-      ],
+        "Email Notifications","Cookie-based Session Management","REST API with Pagination and Filtering","Multi-company DB Architecture","RBAC(Role-Based Access Control)","Express.js"],
       description:
         "Clockly is a modern full-stack employee management and time tracking platform designed to simplify HR workflows. Employees can log working hours, request leave, track availability, and receive notifications. Administrators can manage employees, approve requests, monitor work statistics, and control company workflows from a centralized dashboard.",
       features: [
