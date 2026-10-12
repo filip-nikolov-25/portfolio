@@ -16,7 +16,7 @@ const SideBar = () => {
       name: "GitHub",
       icon: "fa-brands fa-square-github",
       link: "https://github.com/filip-nikolov-25",
-      external: false,
+      external: true,
     },
     {
       name: "Email",
@@ -46,7 +46,7 @@ const SideBar = () => {
     <div
       className={`fixed z-50 ${
         isMobile
-          ? "bottom-[-3px] left-1/2 transform -translate-x-1/2   flex flex-row gap-3"
+          ? "bottom-3 left-1/2 transform -translate-x-1/2 flex flex-row gap-1 px-2 rounded-full bg-slate-950/85 border border-white/10 backdrop-blur-md shadow-lg shadow-black/40"
           : "top-1/3 left-0 flex flex-col"
       }`}
     >
@@ -59,7 +59,7 @@ const SideBar = () => {
             onMouseEnter={() => !isMobile && setHovered(index)}
             onMouseLeave={() => !isMobile && setHovered(null)}
           >
-            <i className={`${item.icon}  ${isMobile ? "text-4xl text-blue-200" : "text-5xl text-white"} `} />
+            <i className={`${item.icon}  ${isMobile ? "text-3xl text-blue-200" : "text-5xl text-white"} `} />
             {!isMobile && hovered === index && (
               <span className="ml-2 text-white">{item.name}</span>
             )}

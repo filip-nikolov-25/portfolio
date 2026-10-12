@@ -9,8 +9,6 @@ const HomePage = () => {
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/40 via-transparent to-[#020617]/80 z-10 pointer-events-none" />
-
-   
       <div className="relative z-20 w-full h-full flex flex-col items-center justify-center">
         <MainSection />
       </div>
